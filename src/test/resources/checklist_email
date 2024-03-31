@@ -1,0 +1,22 @@
+Email Field Validation Checklist for Testers
+№	Test					                Expected result
+1	Empty email field			            Empty email field message
+2	Email in lowercase  			        The field value accepted
+3	Email in capital letters    		    The field value accepted
+4	Email with numbers in username		    The field value accepted
+5	Email with numbers in the domain part	The field value accepted
+6	Email with a hyphen in the username	    The field value accepted
+7	Email with a hyphen in the domain part	The field value accepted
+8	Email with underscore in username 	    The field value accepted
+9	Email with underscore in the domain part	The field value accepted
+10	Email with dots in username		        The field value accepted
+11	Email with multiple dots in the domain part	    The field value accepted
+12	Email without dots in the domain part	Invalid email message
+13	Email length exceeded (>320 characters)	Invalid email message
+14	Lack of @ in email			            Invalid email message
+15	Email with spaces in username		    Invalid email message
+16	Email with spaces in the domain part	Invalid email message
+17	Email without username			        Invalid email message
+18	Email without domain part		        Invalid email message
+19	Invalid first-level domain (2–6 letters are allowed after the dot: .ru)		Invalid email message
+20	Email with a Cyrillic domain name (login@domain.rf)	The field value accepted

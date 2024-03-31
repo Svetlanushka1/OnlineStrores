@@ -1,0 +1,54 @@
+Registration:
+
+TS1: Unregistered User can register with valid data
+TC1 Unregistered user can register  from menu on header by entering all fields and all checkboxes in registration form with valid data
+
+TS1: Unregistered User can't register with invalid data
+TC 3: Unregistered user can't register with valid data in all required field except text box "name" with invalid data
+TC 6: Unregistered user can't register with valid data in all required field except text box "password" with invalid data
+TC 10: Registered user can't register with previously registered email and new password
+TC 11: Registered user can't register with previously registered email and previously registered password
+
+
+LOGIN
+TS 2: Registered User can login with  valid data
+TC 11: Registered User can login with valid data
+TC 12 : Registered User can login with valid email and restore password
+TC 13: User can login with invitation code
+TC 14: User can logout after login
+
+TS: 3 User can't login with invalid data:
+TC 15: Registered user can't login with valid email and invalid password
+TC 16: Registered user can't login with invalid email and valid password
+TC 17 : Unregistered user can't  login (valid data)
+TC 18: Registered user can't login with old password after restore password
+
+
+SELECT PRODUCT
+TS 4: User can select a product
+TC:19 User can select even by scrolling down with the mouse
+TC:20 User can select even by click on the selected product
+TC: 21 User can select event by open subheading "Categories" and click on the selected product
+
+
+Buy
+TS 5 Successful buying process
+TC23 Authorised  User  can add the selected product to the Cart
+TC: 24 Unauthorized User can add the selected product to the Cart
+TC: 25 User can delete any of his selected products from his Cart by button Delete
+TC: 26 User can continue selecting products by going to the home page
+TC: 27 User can buy the selected product by filling out the field "Username" and "Credit card number" of  the “Place order” form and clicking on the purchase button
+TC:28 User can enter his data into all fields of  “Place an order” form
+
+TS 6 TS 5 Unsuccessful buying process
+
+TC 28 User  can't buy product without selected  it
+TC 29  User  can't buy a product without adding it to the Cart
+TC: 30 User can't  end / finish buying process without enter his name and Credit cart number in PlaceOrder form
+TC 31 User can DELETE all products form his cart and can't continue payment
+TC: 32 User can cancel the buying process after click on button "Purchase"
+TC 28 User  can't buy product without selected  it
+TC 29  User  can't buy a product without adding it to the Cart
+TC: 30 User can't  end / finish buying process without enter his name and Credit cart number in PlaceOrder form
+TC 31 User can DELETE all products form his cart and can't continue payment
+TC: 32 User can cancel the buying process after click on button "Purchase"
